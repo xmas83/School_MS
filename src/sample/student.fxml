@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="750.0" prefWidth="1300.0" style="-fx-border-color: black;" styleClass="imgStudent" stylesheets="@docsAndFiles/background.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StudentPortal">
+   <top>
+      <GridPane prefHeight="85.0" prefWidth="898.0" BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="TOP" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" opacity="0.73" prefHeight="50.0" prefWidth="750.0" text="SCHOOL ADMINISTRATIVE BOARD" textAlignment="CENTER" textFill="#282525">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label text="STUDENT'S PORTAL" textFill="#655e5e" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </top>
+   <bottom>
+      <GridPane prefHeight="72.0" prefWidth="898.0" BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="171.0" minWidth="10.0" prefWidth="171.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="124.0" minWidth="10.0" prefWidth="85.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="exit" mnemonicParsing="false" onAction="#exitBtn" prefHeight="58.0" prefWidth="180.0" text="LOG OUT" GridPane.columnIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="5.0" right="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </bottom>
+   <left>
+      <GridPane prefHeight="641.0" prefWidth="241.0" BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="202.0" minHeight="10.0" prefHeight="143.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="577.0" minHeight="10.0" prefHeight="286.0" valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="577.0" minHeight="10.0" prefHeight="191.0" valignment="TOP" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Welcome!" textFill="#9a8686">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="userName" alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="144.0" style="-fx-background-color: #1222;" textAlignment="CENTER" textFill="#09dd37" GridPane.rowIndex="1" />
+            <Button fx:id="updatePw" mnemonicParsing="false" onAction="#updatePword" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #3229;" text="Update password" textFill="#f2efef" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Adobe Gurmukhi" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </left>
+   <right>
+      <GridPane prefHeight="577.0" prefWidth="239.0" BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="251.0" minWidth="10.0" prefWidth="243.0" />
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="251.0" minWidth="10.0" prefWidth="78.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="205.0" minHeight="10.0" prefHeight="41.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="522.0" minHeight="0.0" prefHeight="37.0" valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="522.0" minHeight="0.0" prefHeight="37.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="522.0" minHeight="10.0" prefHeight="58.0" valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="522.0" minHeight="0.0" prefHeight="106.0" valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="522.0" minHeight="10.0" prefHeight="106.0" valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="522.0" minHeight="0.0" prefHeight="35.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="522.0" minHeight="10.0" prefHeight="241.0" valignment="TOP" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="sendMsgTo" mnemonicParsing="false" onAction="#sendMsgToClassmate" text="OK" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label prefHeight="17.0" prefWidth="119.0" text="Ministry of secondary " textFill="#2f2b2b">
+               <font>
+                  <Font name="American Typewriter" size="11.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label text="Education" textFill="#3c3939" GridPane.rowIndex="1">
+               <font>
+                  <Font name="American Typewriter" size="11.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Button fx:id="pdfViewT2" mnemonicParsing="false" onAction="#pdfVeiwBtn2" prefHeight="26.0" prefWidth="187.0" text="Transcript2PDF VIEW" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="pdfViewT1" layoutX="41.0" layoutY="372.0" mnemonicParsing="false" onAction="#pdfViewBtn1" prefHeight="29.0" prefWidth="185.0" text="Transcript1 PDF VIEW" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="5.0" />
+               </GridPane.margin>
+            </Button>
+            <ChoiceBox fx:id="classmateBox" prefHeight="27.0" prefWidth="184.0" GridPane.rowIndex="3" />
+            <Label layoutX="105.0" layoutY="48.0" text="SEND MAIL" textFill="#3c3939" GridPane.rowIndex="2">
+               <font>
+                  <Font name="American Typewriter" size="11.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="checkMsgBtn" mnemonicParsing="false" onAction="#checkMail" prefHeight="57.0" prefWidth="86.0" text="My mails" />
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+   </right>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <GridPane prefHeight="157.0" prefWidth="482.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="126.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="105.0" minHeight="10.0" prefHeight="40.0" valignment="TOP" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="105.0" minHeight="10.0" prefHeight="40.0" valignment="TOP" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="viewBoardMembers" mnemonicParsing="false" onAction="#viewBoardMbrBtn" prefHeight="20.0" prefWidth="200.0" style="-fx-background-color: #1329;" text="Contact Administration" textFill="#fcf9f9">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="viewClassMates" mnemonicParsing="false" onAction="#viewClassMateBtn" prefHeight="20.0" prefWidth="200.0" style="-fx-background-color: #1329;" text="Group Students" textFill="#fcfafa" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="viewTeachers" mnemonicParsing="false" onAction="#viewTeacherBtn" prefHeight="20.0" prefWidth="200.0" style="-fx-background-color: #1329;" text="Contact Teachers" textFill="#fffdfd" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+         </top>
+         <center>
+            <TabPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #656565#656565;" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+              <tabs>
+                <Tab style="-fx-background-color: #76696e#76696e;">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #1230; -fx-border-color: black;" />
+                  </content>
+                </Tab>
+                  <Tab text="Grades/Semester1">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <GridPane layoutX="141.0" layoutY="112.0" prefHeight="373.0" prefWidth="482.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="68.0" minHeight="10.0" prefHeight="68.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="30.0" minHeight="0.0" prefHeight="0.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="Subjects" underline="true">
+                                       <font>
+                                          <Font name="Arial Black" size="18.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="80.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="Maths" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="Arial Black" size="13.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="50.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="Chemistry" GridPane.rowIndex="4">
+                                       <font>
+                                          <Font name="Arial Black" size="13.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="50.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="Biology" GridPane.rowIndex="5">
+                                       <font>
+                                          <Font name="Arial Black" size="13.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="50.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="English" GridPane.rowIndex="6">
+                                       <font>
+                                          <Font name="Arial Black" size="13.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="50.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="Philosophy" GridPane.rowIndex="7">
+                                       <font>
+                                          <Font name="Arial Black" size="13.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="50.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="Grades /20" underline="true" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="Arial Black" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="physicsGrade1" textFill="#49bf62" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font name="Arial Black" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Physics" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font name="Arial Black" size="13.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="50.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label fx:id="mathsGrade1" textFill="#4fb272" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="Arial Black" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="biologyGrade1" textFill="#49ae69" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                       <font>
+                                          <Font name="Arial Black" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="chemistryGrade1" textFill="#41b973" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                       <font>
+                                          <Font name="Arial Black" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="englishGrade1" textFill="#43a872" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                       <font>
+                                          <Font name="Arial Black" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="philosophyGrade1" textFill="#439e6c" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                       <font>
+                                          <Font name="Arial Black" size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Transcript1">
+                    <content>
+                      <AnchorPane fx:id="transcript1" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <BorderPane layoutX="159.0" layoutY="73.0" prefHeight="324.0" prefWidth="482.0" style="-fx-background-color: #1232;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <center>
+                                    <GridPane style="-fx-background-color: #1233;" BorderPane.alignment="CENTER">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="130.0" minWidth="10.0" prefWidth="84.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="248.0" minWidth="10.0" prefWidth="62.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="464.0" minWidth="10.0" prefWidth="399.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label text="COURSE">
+                                             <padding>
+                                                <Insets left="20.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="Arial Black" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="GRADE" GridPane.columnIndex="1">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font name="Arial Black" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="MAX" GridPane.columnIndex="2">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font name="Arial Black" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="TEACHER'S COMMENT" GridPane.columnIndex="3">
+                                             <GridPane.margin>
+                                                <Insets left="40.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font name="Arial Black" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Biology" GridPane.rowIndex="2">
+                                             <GridPane.margin>
+                                                <Insets left="3.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Chemistry" GridPane.rowIndex="3">
+                                             <GridPane.margin>
+                                                <Insets left="3.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Physics" GridPane.rowIndex="4">
+                                             <GridPane.margin>
+                                                <Insets left="3.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="English" GridPane.rowIndex="5">
+                                             <GridPane.margin>
+                                                <Insets left="3.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Philosophy" GridPane.rowIndex="6">
+                                             <GridPane.margin>
+                                                <Insets left="3.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label GridPane.rowIndex="7" />
+                                          <Label text="Maths" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets left="3.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label fx:id="mathsGrade1Transcript" textFill="#14a651" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Label fx:id="biologyGrade1Transcript" textFill="#0f802b" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Label fx:id="chemistryGrade1Transcript" textFill="#13ad46" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                          <Label fx:id="physicsGrade1Transcript" textFill="#0f9449" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                          <Label fx:id="englishGrade1Transcript" textFill="#139c63" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                          <Label fx:id="philosophyGrade1Transcript" textFill="#10853c" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                          <Label text="/20" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                          <Label text="/20" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                          <Label text="/20" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                          <Label text="/20" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                          <Label text="/20" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                                          <Label text="/20" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                          <Label GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                          <Label GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                          <Label GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                          <Label GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                          <Label GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                                          <Label GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                                       </children>
+                                    </GridPane>
+                                 </center>
+                                 <top>
+                                    <GridPane style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
+                                      <columnConstraints>
+                                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="26.0" minHeight="10.0" prefHeight="14.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="46.0" valignment="TOP" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Label text="First semester transcript">
+                                             <font>
+                                                <Font name="Adobe Gurmukhi" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="studentNameTranscript1" alignment="CENTER" prefHeight="21.0" prefWidth="435.0" textFill="#464343" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="Adobe Gurmukhi Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </GridPane>
+                                 </top>
+                                 <right>
+                                    <GridPane prefHeight="234.0" prefWidth="21.0" BorderPane.alignment="CENTER">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                    </GridPane>
+                                 </right>
+                                 <left>
+                                    <GridPane prefHeight="234.0" prefWidth="25.0" BorderPane.alignment="CENTER">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                    </GridPane>
+                                 </left>
+                              </BorderPane>
+                           </children></AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="Grades/Semester2">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <GridPane layoutX="141.0" layoutY="112.0" prefHeight="373.0" prefWidth="482.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="68.0" minHeight="10.0" prefHeight="68.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="30.0" minHeight="0.0" prefHeight="0.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="Subjects" underline="true">
+                                       <font>
+                                          <Font name="Arial Black" size="18.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="80.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="Maths" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="Arial Black" size="13.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="50.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="Chemistry" GridPane.rowIndex="4">
+                                       <font>
+                                          <Font name="Arial Black" size="13.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="50.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="Biology" GridPane.rowIndex="5">
+                                       <font>
+                                          <Font name="Arial Black" size="13.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="50.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="English" GridPane.rowIndex="6">
+                                       <font>
+                                          <Font name="Arial Black" size="13.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="50.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="Philosophy" GridPane.rowIndex="7">
+                                       <font>
+                                          <Font name="Arial Black" size="13.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="50.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="Grades /20" underline="true" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="Arial Black" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="physicsGrade2" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font name="Arial Black" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Physics" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font name="Arial Black" size="13.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="50.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label fx:id="mathsGrade2" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="Arial Black" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="biologyGrade2" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                       <font>
+                                          <Font name="Arial Black" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="chemistryGrade2" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                       <font>
+                                          <Font name="Arial Black" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="englishGrade2" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                       <font>
+                                          <Font name="Arial Black" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="philosophyGrade2" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                       <font>
+                                          <Font name="Arial Black" size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Transcript2">
+                     <content>
+                        <AnchorPane fx:id="transcript2" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <BorderPane layoutX="159.0" layoutY="73.0" prefHeight="324.0" prefWidth="482.0" style="-fx-background-color: #1232;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <center>
+                                    <GridPane style="-fx-background-color: #1233;" BorderPane.alignment="CENTER">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="130.0" minWidth="10.0" prefWidth="75.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="215.0" minWidth="10.0" prefWidth="66.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="499.0" minWidth="10.0" prefWidth="398.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label text="COURSE">
+                                             <padding>
+                                                <Insets left="20.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="Arial Black" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="GRADE" GridPane.columnIndex="1">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font name="Arial Black" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="MAX" GridPane.columnIndex="2">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font name="Arial Black" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="TEACHER'S COMMENT" GridPane.columnIndex="3">
+                                             <GridPane.margin>
+                                                <Insets left="40.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font name="Arial Black" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Biology" GridPane.rowIndex="2">
+                                             <GridPane.margin>
+                                                <Insets left="3.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Chemistry" GridPane.rowIndex="3">
+                                             <GridPane.margin>
+                                                <Insets left="3.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Physics" GridPane.rowIndex="4">
+                                             <GridPane.margin>
+                                                <Insets left="3.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="English" GridPane.rowIndex="5">
+                                             <GridPane.margin>
+                                                <Insets left="3.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Philosophy" GridPane.rowIndex="6">
+                                             <GridPane.margin>
+                                                <Insets left="3.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label GridPane.rowIndex="7" />
+                                          <Label text="Maths" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets left="3.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label fx:id="mathsGrade2Transcript" textFill="#2a13a8" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Label fx:id="biologyGrade2Transcript" textFill="#2b0f80" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Label fx:id="chemistryGrade2Transcript" textFill="#3c13ae" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                          <Label fx:id="physicsGrade2Transcript" textFill="#320e94" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                          <Label fx:id="englishGrade2Transcript" textFill="#45129e" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                          <Label fx:id="philosophyGrade2Transcript" textFill="#2d0f86" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                          <Label text="/20" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                          <Label text="/20" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                          <Label text="/20" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                          <Label text="/20" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                          <Label text="/20" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                                          <Label text="/20" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                          <Label GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                          <Label GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                          <Label GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                          <Label GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                          <Label GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                                          <Label GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                                       </children>
+                                    </GridPane>
+                                 </center>
+                                 <top>
+                                    <GridPane style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="26.0" minHeight="10.0" prefHeight="14.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="46.0" valignment="TOP" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label text="Second semester transcript">
+                                             <font>
+                                                <Font name="Adobe Gurmukhi" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="studentNameTranscript2" alignment="CENTER" prefHeight="21.0" prefWidth="435.0" textFill="#4d4646" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="Adobe Gurmukhi Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </GridPane>
+                                 </top>
+                                 <right>
+                                    <GridPane prefHeight="234.0" prefWidth="21.0" BorderPane.alignment="CENTER">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </right>
+                                 <left>
+                                    <GridPane prefHeight="234.0" prefWidth="25.0" BorderPane.alignment="CENTER">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </left>
+                              </BorderPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

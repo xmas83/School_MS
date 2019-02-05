@@ -1,0 +1,47 @@
+.admin{
+     -fx-background-image: url("/sample/docsAndFiles/f2.jpg")
+}
+
+.student{
+     -fx-background-image: url("/sample/docsAndFiles/22.jpg")
+}
+
+.teacher{
+     -fx-background-image: url("/sample/docsAndFiles/black.jpg")
+}
+
+.adminContact{
+     -fx-background-image: url("/sample/docsAndFiles/admin.jpeg")
+}
+
+.imgLogin{
+     -fx-background-image: url("/sample/docsAndFiles/labo.jpg")
+}
+
+.imgStaff{
+     -fx-background-image: url("/sample/docsAndFiles/f2.jpg")
+}
+
+.imgStudent{
+     -fx-background-image: url("/sample/docsAndFiles/bg23.jpg")
+}
+
+.imgTeacher{
+     -fx-background-image: url("/sample/docsAndFiles/f2.jpg")
+}
+
+.login_bg{
+     -fx-background-image: url("/sample/docsAndFiles/v1.jpeg")
+}
+
+.login1_bg{
+     -fx-background-image: url("/sample/docsAndFiles/bbg.jpg")
+}
+
+.cover_bg{
+     -fx-background-image: url("/sample/docsAndFiles/21.jpg")
+}
+
+.direction{
+     -fx-background-image: url("/sample/docsAndFiles/s.png")
+}

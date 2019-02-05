@@ -1,0 +1,10 @@
+.text {
+  -fx-background-color:#2a2a2a;
+}
+
+.background {
+    -fx-background-color:#2a2a2a;
+}
+.border {
+-fx-border-color:1px solid #2a2a2a;
+}

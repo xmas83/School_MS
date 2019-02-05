@@ -1,0 +1,12 @@
+.principal{
+     -fx-background-image: url("/sample/docsAndFiles/photo4.jpeg")
+}
+.IT_manager{
+     -fx-background-image: url("/sample/docsAndFiles/photo2.jpg")
+}
+.secretary{
+     -fx-background-image: url("/sample/docsAndFiles/photo1.jpeg")
+}
+.HR_manager{
+     -fx-background-image: url("/sample/docsAndFiles/photo3.jpeg")
+}

@@ -1,0 +1,65 @@
+package sample;
+
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class TeacherContactAdmin implements ControlledScenes,Initializable {
+
+    @FXML private Button returnBtn;
+    @FXML private Label principalName;
+    @FXML private Label principalEmail;
+    @FXML private Label principalTel;
+    @FXML private Label itManagerName;
+    @FXML private Label itMangerEmail;
+    @FXML private Label itManagerTel;
+    @FXML private Label secretaryName;
+    @FXML private Label secretaryEmail;
+    @FXML private Label secretaryTel;
+    @FXML private Label humanResName;
+    @FXML private Label humanResEmail;
+    @FXML private Label humanResTel;
+    private ScenesController myController;
+    DBConnections con = new DBConnections();
+    String position1 = "Principal";
+    String position2 = "IT Manager";
+    String position3 = "General Secretary";
+    String position4 = "Human Resources Manager";
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        DBConnections.connect();
+        principalName.setText(con.principalsName(position1));
+        principalEmail.setText(con.getprincipalEmail(position1));
+        principalTel.setText(con.getprincipalTel(position1));
+
+        itManagerName.setText(con.getITmanagerlName(position2));
+        itMangerEmail.setText(con.getITmanagerEmail(position2));
+        itManagerTel.setText(con.getITmanagerTel(position2));
+
+        secretaryName.setText(con.getSecretaryName(position3));
+        secretaryEmail.setText(con.getSecretaryEmail(position3));
+        secretaryTel.setText(con.getSecretaryTel(position3));
+
+        humanResName.setText(con.getHRmanagerName(position4));
+        humanResEmail.setText(con.getHRmanagerEmail(position4));
+        humanResTel.setText(con.getHRmanagerTel(position4));
+    }
+
+
+
+    @FXML private void handleReturnBtn(){
+        myController.setScenes(SchoolAppFramework.teacherSceneID);
+
+    }
+
+    @Override
+    public void setScreenParent(ScenesController screenController) {
+        myController=screenController;
+    }
+
+}
